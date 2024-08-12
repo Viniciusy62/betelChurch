@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from "styled-components";
 
 export default createGlobalStyle`
   * {
@@ -9,15 +9,19 @@ export default createGlobalStyle`
 
   :root {
     font-size: 62.5%;
-    color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.GRAY_900};
   }
 
   body, input, button, textarea {
     font-family: "Nunito Sans", sans-serif;
-    font-size: 1.6em;
+    font-size: 1.6rem;
+  }
+  
+  body {
+    background-color: ${({ theme }) => theme.COLORS.WHITE};
   }
 
-  body {
-    background-color: ${({ theme }) => theme.COLORS.BACKGROUND_900};
+  p {
+    line-height: 1.5;
   }
-`
+`;
