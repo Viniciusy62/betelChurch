@@ -1,8 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  margin-top: 5em;
+  margin-top: 5rem;
 
-  display: grid;
-  justify-content: center;
+  text-align: center;
 `;

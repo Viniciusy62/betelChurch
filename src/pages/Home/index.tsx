@@ -9,8 +9,7 @@ export function Home() {
       <Nav />
 
       <Container>
-        {/* <h1>Aqui será o conteúdo principal</h1> */}
-        
+        <h1>Desculpe, estamos em construção</h1>
       </Container>
     </>
   );
