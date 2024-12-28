@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { DEVICE_BREAKPOINTS } from "./deviceBreakpoints";
 
 export default createGlobalStyle`
   * {
@@ -9,9 +10,12 @@ export default createGlobalStyle`
 
   :root {
     font-size: 62.5%;
-    color: ${({ theme }) => theme.COLORS.GRAY_900};
-  }
 
+    @media (max-width: ${DEVICE_BREAKPOINTS.SM}) {
+      font-size: 50%;
+    }
+  }
+  
   body, input, button, textarea {
     font-family: "Nunito Sans", sans-serif;
     font-size: 1.6rem;
@@ -19,6 +23,8 @@ export default createGlobalStyle`
   
   body {
     background-color: ${({ theme }) => theme.COLORS.WHITE};
+    color: ${({ theme }) => theme.COLORS.GRAY_950};
+    position: relative;
   }
 
   p {
