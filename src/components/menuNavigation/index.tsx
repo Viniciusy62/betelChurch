@@ -1,9 +1,9 @@
 import { Container } from "./styles";
 
-export function Header() {
-  
+export function MenuNavigation() {
+
   return (
-    <Container className="header">
+    <Container>
 
     </Container>
   );

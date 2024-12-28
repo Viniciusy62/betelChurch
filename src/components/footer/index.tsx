@@ -1,10 +1,10 @@
 import { Container } from "./styles";
 
-export function Header() {
+export function Footer() {
   
   return (
-    <Container className="header">
-
+    <Container>
+     
     </Container>
   );
 }
