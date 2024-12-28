@@ -1,7 +1,7 @@
 import { Container } from "./styles"
 
 
-export function Button({title, loading=false, ...rest}: {title: string, loading: boolean}) {
+export function Button({title, loading=false, ...rest}: {title: string, loading?: boolean}) {
   
   return (
     <Container
