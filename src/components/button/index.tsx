@@ -1,7 +1,13 @@
-import { Container } from "./styles"
+import { Container } from "./styles";
+import { ReactNode } from "react";
 
-
-export function Button({title, loading=false, ...rest}: {title: string, loading?: boolean}) {
+export function Button({
+  title, 
+  loading=false, 
+  ...rest}: {
+    title: ReactNode, 
+    loading?: boolean, 
+    onClick?: () => void}) {
   
   return (
     <Container

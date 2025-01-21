@@ -1,6 +1,9 @@
 import styled from "styled-components";
 
 export const Container = styled.button`
+  display: flex;
+  align-items: center;
+  
   padding: .5rem 1rem;
   height: 4rem;
   background-color: ${({ theme }) => theme.COLORS.ORANGE_500};
