@@ -1,18 +1,16 @@
 import { Container } from "./styles";
-import Logo from "../../public/logo-cruz-betel.png";
-import { FiMenu } from "react-icons/fi"
+// import Logo from "../../public/logo-cruz-betel.png";
 import { Button } from "../../components/button";
+// import { MobileMenu } from "../../components/mobileMenu";
+import { Header } from "../../components/header";
 
 export function Home() {
+
   return (
     <Container>
-      <header>
-        <img src={Logo} alt="Logo da Igreja Betel" />
+      <Header />
 
-        <FiMenu size={24} color="#fff" />
-      </header>
-
-      <main>
+      <section className="apresentation-images">
         <p>Uma igreja que ama Jesus Cristo, que ama fazer discípulos e que ama pessoas</p>
 
         <h1>Igreja Betel</h1>
@@ -20,7 +18,7 @@ export function Home() {
         <Button title="Venha participar conosco"/>
 
         <Button title="Confira nosso calendário" />
-      </main>
+      </section>
 
       <section className="apresentation">
         <p>A Igreja Betel tem o propósito de estabelecer o Reino de Deus na terra  através da difusão do Evangelho de Jesus Cristo a todos os povos,  línguas e nações dentro de uma visão missionária</p>

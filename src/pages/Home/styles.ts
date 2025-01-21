@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const Container = styled.section`
-  header {
+  /* header {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -14,10 +14,10 @@ export const Container = styled.section`
     img {
       width: clamp(3rem, 4rem, 6rem);
     }
-  }
+  } */
 
-  main {
-    padding: 1.6rem;
+  .apresentation-images {
+    padding: 8rem 1.6rem 1.6rem;
     background: #333;
     height: 100vh;
 
