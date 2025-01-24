@@ -62,7 +62,7 @@ export const Container = styled.section`
     }
   }
 
-  .whorship-time {
+  .whorship-times {
     padding: 1.6rem;
 
     h2 {
@@ -72,7 +72,7 @@ export const Container = styled.section`
       font-weight: 400;
     }
 
-    .images-worship-time {
+    .images-worship-times {
       display: flex;
       flex-wrap: nowrap;
     }
