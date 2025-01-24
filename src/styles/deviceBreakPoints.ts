@@ -5,3 +5,5 @@ export const DEVICE_BREAKPOINTS = {
   LG: 1024,
   XL: 1280,
 }
+
+export default DEVICE_BREAKPOINTS;
