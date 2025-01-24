@@ -1,7 +1,8 @@
 import { FiX, FiMenu } from "react-icons/fi";
 import { useState } from "react";
-import { Container, ContainerBtn } from "./styles";
+import { Container, ButtonMobileStyle } from "./styles";
 import { Button } from "../button";
+import { Menu } from "../menu";
 
 export function MobileMenu() {
   const [isOpen, setIsOpen] = useState(false);
@@ -12,30 +13,20 @@ export function MobileMenu() {
 
   return (
     <>
-      <ContainerBtn>
-        <Button title={isOpen ? <FiX size={24} /> : <FiMenu size={24} />} onClick={toggleMenu} />
-      </ContainerBtn>
-      
+      <ButtonMobileStyle>
+        <Button
+          title={isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+          onClick={toggleMenu}
+        />
+      </ButtonMobileStyle>
+
       {isOpen && (
         <Container>
-          <Button title={isOpen ? <FiX size={24}/> : <FiMenu size={24} />} onClick={toggleMenu} />
-          <ul>
-            <li>
-              <a href="#">Home</a>
-            </li>
-            <li>
-              <a href="#">Quem somos</a>
-            </li>
-            <li>
-              <a href="#">Ministérios</a>
-            </li>
-            <li>
-              <a href="#">Eventos</a>
-            </li>
-            <li>
-              <a href="#">Contato</a>
-            </li>
-          </ul>
+          <Button
+            title={isOpen ? <FiX size={24} /> : <FiMenu size={24} />}
+            onClick={toggleMenu}
+          />
+          <Menu />
         </Container>
       )}
     </>
